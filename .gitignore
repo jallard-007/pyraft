@@ -1,0 +1,12 @@
+
+.vscode
+__pycache__
+
+# generated protobuf anf grpc files
+src/pyraft/raft_pb2_grpc.py
+src/pyraft/raft_pb2.py
+src/pyraft/raft_pb2.pyi
+
+# log and state files
+*.log
+*.raft

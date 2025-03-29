@@ -1,0 +1,30 @@
+[project]
+name = "pyraft"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jallard",email = "justinallard2001@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">= 3.9"
+dependencies = [
+    "types-protobuf (>=5.29.1.20250315,<6.0.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+ruff = "^0.11.2"
+
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E", "F", "I"]  # Errors, Flake8, and import sorting
+lint.ignore = ["E501"]  # Ignore long lines
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
